@@ -22,11 +22,4 @@ public interface CustomerRepository extends JpaRepository<Customer, UUID> {
      */
     List<Customer> findAllByCustomerNameLike(String customerName);
 
-    /**
-     * search customer by particular id
-     * @param id - customer id
-     * @return customer
-     */
-    Customer findCustomerById(UUID id);
-
 }
